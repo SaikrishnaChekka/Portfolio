@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Your Name — Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+      <div class="wrap">
+        <h1 class="name">Sai Krishna Chekka</h1>
+        <p class="role">IT Intern — Systems & Cybersecurity</p>
+        <div class="contact-inline muted">(419) 378-6513 • <a href="mailto:schekka@rockets.utoledo.edu">schekka@rockets.utoledo.edu</a> • <a href="https://www.linkedin.com/in/saikrishna-chekka-881339221" target="_blank">LinkedIn</a></div>
+        <button id="themeToggle" class="btn small">Toggle theme</button>
+      </div>
+  </header>
+
+  <main class="wrap main">
+    <section class="about">
+      <h2>About</h2>
+      <p>Soon-to-be graduate in Computer Science & Engineering at The University of Toledo with hands-on experience administering Microsoft 365 and Exchange environments, mailbox migrations, and IT operations. Passionate about systems reliability and cybersecurity — ranked Top 15 nationally at the U.S. Department of Energy CyberForce competition.</p>
+    </section>
+
+    <section class="projects">
+      <h2>Projects</h2>
+      <div class="grid" id="projectsGrid">
+        <article class="card">
+          <img src="https://via.placeholder.com/600x360?text=Disaster+Recovery" alt="Disaster Recovery Exercise">
+          <h3>Disaster Recovery — Exchange On‑Premises</h3>
+          <p>Built and validated a disaster recovery environment for Exchange On‑Premises, performed full mailbox/database restorations, and documented recovery workflows to improve resilience.</p>
+        </article>
+        <article class="card">
+          <img src="https://via.placeholder.com/600x360?text=Exchange+Upgrade" alt="Legacy Exchange Upgrade">
+          <h3>Legacy Exchange Upgrade</h3>
+          <p>Deployed Exchange 2019 Subscription Edition with OWA, Hybrid, DAG and Proofpoint integration; executed staged migrations from Exchange 2016 to 2019 and Subscription Edition while ensuring uptime.</p>
+        </article>
+        <article class="card">
+          <img src="https://via.placeholder.com/600x360?text=Secure+Payment" alt="Secure payment interface">
+          <h3>Secure Payment Interface (Accessibility)</h3>
+          <p>Designed a voice-driven payment interface leveraging Google Speech Recognition to enable secure transactions for users with visual impairments.</p>
+        </article>
+        <article class="card">
+          <img src="https://via.placeholder.com/600x360?text=Solar+Tracker" alt="Sun-tracking solar panels">
+          <h3>Sun‑tracking Solar Panels</h3>
+          <p>Engineered a solar tracking system to optimize panel orientation and maximize energy capture through automated angular adjustments.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Contact</h2>
+      <p class="muted">I'm currently based in Toledo, OH — available for internships and entry-level roles.</p>
+      <form id="contactForm">
+        <label>
+          Email
+          <input type="email" id="email" required>
+        </label>
+        <label>
+          Message
+          <textarea id="message" rows="4" required></textarea>
+        </label>
+        <button type="submit" class="btn">Send</button>
+        <p id="formStatus" class="muted"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <small>© <span id="year"></span> Your Name</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
