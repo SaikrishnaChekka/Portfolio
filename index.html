@@ -1,63 +1,171 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Your Name — Portfolio</title>
+  <title>Sai Krishna Chekka — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-      <div class="wrap">
-        <h1 class="name">Sai Krishna Chekka</h1>
-        <p class="role">IT Intern — Systems & Cybersecurity</p>
-        <div class="contact-inline muted">(419) 378-6513 • <a href="mailto:schekka@rockets.utoledo.edu">schekka@rockets.utoledo.edu</a> • <a href="https://www.linkedin.com/in/saikrishna-chekka-881339221" target="_blank">LinkedIn</a></div>
-        <button id="themeToggle" class="btn small">Toggle theme</button>
+  <header class="hero-section">
+    <nav class="navbar">
+      <div class="nav-wrap">
+        <span class="nav-logo">Sai Krishna Chekka</span>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
+    </nav>
+    <div class="hero-bg-anim"></div>
+    <div class="hero-content glass">
+      <img src="profile.jpg" alt="Sai Krishna Chekka" class="profile-pic">
+      <div>
+        <h1 class="hero-title">Sai Krishna Chekka</h1>
+        <h2 class="hero-role">IT Messaging Intern at Jacobs Engineering Group</h2>
+        <p class="hero-location">Toledo, OH</p>
+        <div class="hero-links">
+          <a href="mailto:schekka@rockets.utoledo.edu" class="btn">Email</a>
+          <a href="https://www.linkedin.com/in/saikrishna-chekka-881339221" class="btn" target="_blank">LinkedIn</a>
+          <a href="Sai_Krishna_Chekka.pdf" class="btn" target="_blank">Resume</a>
+        </div>
+      </div>
+    </div>
   </header>
 
-  <main class="wrap main">
-    <section class="about">
+  <main>
+    <section class="about-section section" id="about">
       <h2>About</h2>
-      <p>Soon-to-be graduate in Computer Science & Engineering at The University of Toledo with hands-on experience administering Microsoft 365 and Exchange environments, mailbox migrations, and IT operations. Passionate about systems reliability and cybersecurity — ranked Top 15 nationally at the U.S. Department of Energy CyberForce competition.</p>
-    </section>
-
-    <section class="projects">
-      <h2>Projects</h2>
-      <div class="grid" id="projectsGrid">
-        <article class="card">
-          <img src="https://via.placeholder.com/600x360?text=Disaster+Recovery" alt="Disaster Recovery Exercise">
-          <h3>Disaster Recovery — Exchange On‑Premises</h3>
-          <p>Built and validated a disaster recovery environment for Exchange On‑Premises, performed full mailbox/database restorations, and documented recovery workflows to improve resilience.</p>
-        </article>
-        <article class="card">
-          <img src="https://via.placeholder.com/600x360?text=Exchange+Upgrade" alt="Legacy Exchange Upgrade">
-          <h3>Legacy Exchange Upgrade</h3>
-          <p>Deployed Exchange 2019 Subscription Edition with OWA, Hybrid, DAG and Proofpoint integration; executed staged migrations from Exchange 2016 to 2019 and Subscription Edition while ensuring uptime.</p>
-        </article>
-        <article class="card">
-          <img src="https://via.placeholder.com/600x360?text=Secure+Payment" alt="Secure payment interface">
-          <h3>Secure Payment Interface (Accessibility)</h3>
-          <p>Designed a voice-driven payment interface leveraging Google Speech Recognition to enable secure transactions for users with visual impairments.</p>
-        </article>
-        <article class="card">
-          <img src="https://via.placeholder.com/600x360?text=Solar+Tracker" alt="Sun-tracking solar panels">
-          <h3>Sun‑tracking Solar Panels</h3>
-          <p>Engineered a solar tracking system to optimize panel orientation and maximize energy capture through automated angular adjustments.</p>
-        </article>
+      <div class="glass about-glass">
+        <p>IT Messaging Intern at Jacobs Engineering Group with hands-on experience in Microsoft 365, Exchange, migrations, and IT operations. Passionate about systems reliability, cybersecurity, and process improvement. Ranked Top 15 nationally at the U.S. Department of Energy CyberForce competition. Merit Scholarship recipient. Analytical, adaptable, and proactive problem solver.</p>
       </div>
     </section>
-
-    <section class="contact">
+    <div class="section-divider"></div>
+    <section class="skills-section section" id="skills">
+      <h2>Skills & Tools</h2>
+      <ul class="skills-list">
+        <li>Java</li>
+        <li>SQL</li>
+        <li>HTML</li>
+        <li>C</li>
+        <li>CSS</li>
+        <li>Python</li>
+        <li>PowerShell</li>
+        <li>Active Directory</li>
+        <li>Microsoft Exchange Server</li>
+        <li>Microsoft 365</li>
+        <li>Proofpoint</li>
+        <li>SharePoint</li>
+        <li>Nmap</li>
+        <li>Metasploit</li>
+        <li>Wireshark</li>
+        <li>Burp Suite</li>
+        <li>Sonic Walls</li>
+        <li>Solid Works</li>
+        <li>Multi Sim</li>
+      </ul>
+    </section>
+    <div class="section-divider"></div>
+    <section class="projects-section section" id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card glass">
+          <h3>Disaster Recovery Exercise – Exchange On-premises</h3>
+          <p>Engineered and executed a disaster recovery environment for Exchange On-Premises, validating backup integrity and performing full mailbox and database restorations. Documented recovery workflows and identified process optimizations to enhance resilience.</p>
+        </div>
+        <div class="project-card glass">
+          <h3>Legacy Exchange Upgrade – On-Premises</h3>
+          <p>Deployed Exchange 2019 Subscription Edition environment with OWA, Hybrid, DAG, and Proofpoint integration. Executed staged migrations from Exchange 2016 to 2019 and then Subscription Edition, ensuring data integrity and uptime. Validated systems, troubleshot issues, and documented upgrade and rollback plans.</p>
+        </div>
+        <div class="project-card glass">
+          <h3>Flooding network using DoS & DDoS techniques</h3>
+          <p>Flooded a network using DoS and DDoS techniques, overwhelming a target network or server with massive traffic to test resilience and response to denial-of-service attacks.</p>
+        </div>
+        <div class="project-card glass">
+          <h3>Secure payment interface for Blind people</h3>
+          <p>Developed an accessible payment application leveraging Google’s speech recognition, enabling visually impaired users to initiate financial transactions through voice-command authentication.</p>
+        </div>
+        <div class="project-card glass">
+          <h3>Brute Force attack using Burp Suite</h3>
+          <p>Performed brute force attacks using Burp Suite to systematically test credentials and security for web applications, identifying vulnerabilities and improving security posture.</p>
+        </div>
+        <div class="project-card glass">
+          <h3>Sun-tracking solar panels</h3>
+          <p>Engineered a dynamic photovoltaic module with solar tracking mechanisms to maximize energy harnessing by autonomously adjusting orientation relative to the sun’s trajectory.</p>
+        </div>
+      </div>
+    </section>
+    <div class="section-divider"></div>
+    <section class="experience-section section" id="experience">
+      <h2>Experience</h2>
+      <div class="exp-card glass">
+        <h3>IT Messaging Intern</h3>
+        <p class="exp-org">Jacobs Engineering Group Inc. <span class="exp-date">May 2025 – Present</span></p>
+        <ul>
+          <li>Administer and maintain Microsoft 365 and Exchange (On-Premises & Online) environments, including configuration, policy management, and integration across Office 365, SharePoint Online, OneDrive, Teams, and high-performance service delivery.</li>
+          <li>Executed mailbox and data migrations from Exchange On-Premises to Exchange Online, streamlined M365 deployments, and resolved complex messaging issues to minimize downtime.</li>
+          <li>Created and maintained technical documentation, including SOPs, troubleshooting guides, and configuration records, to improve operational efficiency and knowledge sharing.</li>
+        </ul>
+      </div>
+      <div class="exp-card glass">
+        <h3>IT Student Technician</h3>
+        <p class="exp-org">The University of Toledo Medical Center <span class="exp-date">Oct 2024 – Present</span></p>
+        <ul>
+          <li>Deliver comprehensive technical assistance to healthcare professionals by diagnosing and resolving complexities related to hardware, software, and advanced medical instrumentation.</li>
+          <li>Facilitate the deployment, optimization, and sustained functionality of IT infrastructures and software solutions, ensuring seamless performance across clinical and administrative domains.</li>
+          <li>Enforce and oversee robust security protocols to fortify patient data integrity. Aid in administering user access controls, proactively detecting security vulnerabilities, and mitigating threats to ensure the protection of confidential information.</li>
+        </ul>
+      </div>
+      <div class="exp-card glass">
+        <h3>IT Administrative Assistant</h3>
+        <p class="exp-org">Kalasalingam Academy of Research and Education <span class="exp-date">Jul 2022 – Mar 2023</span></p>
+        <ul>
+          <li>Facilitated deployment and configuration of computing systems and essential software applications, including hardware setup, software installations, user-specific customizations, and comprehensive functionality testing.</li>
+          <li>Diagnosed and resolved recurring IT challenges for staff and students, serving as the primary point of support. Conducted systematic issue identification, executed effective resolutions, and maintained thorough documentation for continuous improvement.</li>
+        </ul>
+      </div>
+    </section>
+    <div class="section-divider"></div>
+    <section class="education-section section" id="education">
+      <h2>Education</h2>
+      <div class="edu-card glass">
+        <h3>The University of Toledo</h3>
+        <p>Bachelor of Science in Computer Science & Engineering</p>
+        <p>Jan 2024 – Present | GPA: 3.37</p>
+      </div>
+      <div class="edu-card glass">
+        <h3>Kalasalingam Academy of Research and Education</h3>
+        <p>Bachelor of Science in Computer Science & Engineering</p>
+        <p>Aug 2021 – Dec 2023 | GPA: 3.22</p>
+      </div>
+    </section>
+    <div class="section-divider"></div>
+    <section class="achievements-section section" id="achievements">
+      <h2>Achievements & Highlights</h2>
+      <ul>
+        <li>University of Toledo Merit Scholarship Recipient (2024-2026)</li>
+        <li>Ranked Top 15 nationally at the U.S. Department of Energy’s CyberForce Competition</li>
+        <li>CyberForce Competition: Represented the University of Toledo in a national cybersecurity competition, applying defense strategies and teamwork to secure critical infrastructure systems.</li>
+        <li>Cybernerds club – Event Management Head: Led planning and execution of technical workshops and events, increasing practical knowledge in cybersecurity.</li>
+        <li>Google Developer Student Club – Technical Lead: Coordinated and delivered multiple technical events, mentoring peers in software development and fostering collaboration on real world projects.</li>
+      </ul>
+    </section>
+    <div class="section-divider"></div>
+    <section class="contact-section section" id="contact">
       <h2>Contact</h2>
-      <p class="muted">I'm currently based in Toledo, OH — available for internships and entry-level roles.</p>
       <form id="contactForm">
-        <label>
-          Email
+        <label>Email
           <input type="email" id="email" required>
         </label>
-        <label>
-          Message
+        <label>Message
           <textarea id="message" rows="4" required></textarea>
         </label>
         <button type="submit" class="btn">Send</button>
@@ -68,7 +176,7 @@
 
   <footer class="site-footer">
     <div class="wrap">
-      <small>© <span id="year"></span> Your Name</small>
+      <small>© <span id="year"></span> Sai Krishna Chekka</small>
     </div>
   </footer>
 
